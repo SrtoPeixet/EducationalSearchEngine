@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block page_title %}{{ page_title }}{% endblock %}
+{% block content %}
+    Found <strong>{{ found_counter }}</strong> results...
+    <hr>
+    {% for item in results_list %}
+        <div class="pb-3">
+            <div class="doc-title">
+                <a href="/doc_details?position={{ loop.index0 }}">{{ loop.index }} - @{{item.user_screen_name}} says: {{ item.full_text[:70] }}...
+                </a>
+            </div>
+            <div class="cited">
+                <cite> <a href="{{ item.url }}">{{ item.url }}</a></cite>
+            </div>
+            <div class="doc-desc">
+                {{ item.created_at }} by {{ item.user_name }}
+            </div>
+
+        </div>
+
+    {% endfor %}
+{% endblock %}
+
