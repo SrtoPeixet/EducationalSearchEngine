@@ -15,10 +15,10 @@ Marta Gràcia <br>
 
 You will need some packages if you want to run it locally. For the backend, we use DeepTranslator for processing tweets in non-english languages. You will also need to install jsonpickl, gensim and nlkt. If anyone finds another requirement please let us know in order to update the following snippet. 
 
-`pip install deep-translator
-pip install jsonpickle
-pip install gensim
-pip install nlkt`
+`pip install deep-translator`<br>
+`pip install jsonpickle`<br>
+`pip install gensim`<br>
+`pip install nlkt`<br>
 
 Npm is also required for running the dashboards. We are using chartJS, installation is quite straight forward. Please refer to:
 
